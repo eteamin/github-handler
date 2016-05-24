@@ -13,6 +13,4 @@ class PushController(RestController):
 
     @expose('json')
     def post(self, **kwargs):
-
-        # if request.environ['HTTP_ORIGIN'] is not config.git_url
-        #   subprocess.call('bash_script')
+        pass
