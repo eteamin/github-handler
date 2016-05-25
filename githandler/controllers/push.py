@@ -13,4 +13,5 @@ class PushController(RestController):
 
     @expose('json')
     def post(self, **kwargs):
-        pass
+        if request.environ['HTTP_ORIGIN'] is config.giturl:
+            subprocess.call('bash-script')
